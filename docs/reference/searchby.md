@@ -1,0 +1,3 @@
+
+# searchby
+::: pyobsidian.searchby

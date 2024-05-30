@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pyobsidian"
+version = "0.1.0"
+description = "Find and manipulate any note in your Obsidian vault"
+authors = [
+    "Matheus S. Rodrigues <matheus.srodr@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/matheussrod/pyobsidian"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^8.2.1"
+mkdocs = "^1.6.0"
+pyyaml = "^6.0.1"
+mypy = "^1.10.0"
+types-pyyaml = "^6.0.12.20240311"
+pytest-cov = "^5.0.0"
+mkdocs-material = "^9.5.25"
+mkdocs-include-dir-to-nav = "^1.2.0"
+mkdocstrings = {extras = ["python"], version = "^0.25.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--cov --cov-report term-missing"

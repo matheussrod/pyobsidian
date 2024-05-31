@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyobsidian"
-version = "0.1.0"
+version = "0.1.1"
 description = "Find and manipulate any note in your Obsidian vault"
 authors = [
     "Matheus S. Rodrigues <matheus.srodr@gmail.com>"

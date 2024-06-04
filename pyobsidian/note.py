@@ -7,47 +7,11 @@ from __future__ import annotations
 
 from datetime import datetime
 from itertools import accumulate
+from pyobsidian.helpers import read_file
 import os
 import re
 from typing import Optional, Self
 import yaml
-
-class NoteReader:
-    """A class used to read Obsidian notes from files.
-
-    Parameters
-    ----------
-    path : str
-        The path of the note file
-    """
-    def __init__(self: Self, path: str):
-        self.__path = path
-
-    def __repr__(self) -> str:
-        return f"NoteReader(path='{self.path}')"
-
-    @property
-    def path(self: Self) -> str:
-        """The path of the note file
-        
-        Returns
-        -------
-        str
-            The path of the note file
-        """
-        return self.__path
-
-    def read(self: Self) -> str:
-        """Reads the content of a note from the file specified by the 'path' attribute.
-
-        Returns
-        -------
-        str
-            The content of the note file
-        """
-        with open(self.path, 'r', encoding='utf8') as note:
-            note_content = note.read()
-        return note_content
 
 class NoteProperties:
     """A class used to retrieve properties of Obsidian notes.
@@ -390,10 +354,14 @@ class Note:
     ----------
     path : str
         The path of the note.
+    content : str, optional
+        The content of the note. If not provided, it will be read from the note file.
     """
-    def __init__(self: Self, path: str):
-        self.__reader = NoteReader(path)
-        self.__properties = NoteProperties(path, NoteReader(path).read())
+    def __init__(self: Self, path: str, content: Optional[str] = None):
+        if content is None:
+            content = read_file(path)
+        self.__path = path
+        self.__properties = NoteProperties(path, content)
     
     def __repr__(self) -> str:
         return f"Note(path='{self.path}')"
@@ -415,8 +383,8 @@ class Note:
         str
             The normalized path of the note.
         """
-        return os.path.normpath(self.__reader.path)
-    
+        return os.path.normpath(self.__path)
+
     @property
     def properties(self: Self) -> NoteProperties:
         """Retrieves the properties of the note.
@@ -427,3 +395,26 @@ class Note:
             The properties of the note.
         """
         return self.__properties
+    
+    def read(self: Self) -> str:
+        """Reads the content of a note from the file.
+
+        Returns
+        -------
+        str
+            The content of the note file
+        """
+        return read_file(self.path)
+
+    def write(self: Self) -> str:
+        """Writes the content of a note to the file.
+
+        Returns
+        -------
+        str
+            The path of the written note
+        """
+        with open(self.path, 'w', encoding='utf8') as file:
+            file.write(self.properties.content)
+        return self.path
+

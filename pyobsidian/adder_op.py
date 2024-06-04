@@ -48,6 +48,24 @@ class Op(ABC):
         ...
 
 class OpMkHeader(Op):
+    """Adder operator mkheader.
+    
+    From the operator is obtained: 
+    
+    - Precedence represents whether it will be added before or after. '|>' or '<|'
+    - The level indicates the header level (1, 2, 3 etc)
+    - The index represents which level will be applied.
+
+    For example OpMkHeader('|>{3}h2') creates precedence '|>', level 2 and index 3
+    The translation of this operator would be "after the third h2".
+
+    This structure can be used by AdderWhere to add content based on the order of headers.
+
+    Parameters
+    ----------
+    operator : str
+        The operator string.
+    """
     def __init__(self: Self, operator: str):
         self.__raw_operator = operator
         self.__operator = self.build_operator(operator)
@@ -64,6 +82,18 @@ class OpMkHeader(Op):
         return f"OperatorMkHeader('{self.__raw_operator}')"
     
     def build_operator(self: Self, operator: str) -> dict[str, str]:
+        """Build the operator.
+
+        Parameters
+        ----------
+        operator : str
+            The operator string.
+
+        Returns
+        -------
+        dict[str, str]
+            The operator.
+        """
         pattern = r'([\<\>]?\|[\<\>]?)\{([0-9]+)\}h([1-6])'
         match  = re.match(pattern, operator)
         if match is None:

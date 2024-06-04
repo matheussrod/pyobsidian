@@ -206,6 +206,17 @@ class NoteProperties:
         """
         return self.__content
     
+    @content.setter
+    def content(self: Self, content: str) -> None:
+        """Sets the content of the note file
+
+        Parameters
+        ----------
+        content : str
+            The content of the note file
+        """
+        self.__content = content
+    
     @property
     def filename(self: Self) -> str:
         """Returns the filename of the current object's path.

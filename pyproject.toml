@@ -22,6 +22,7 @@ types-pyyaml = "^6.0.12.20240311"
 mkdocs-material = "^9.5.25"
 mkdocs-include-dir-to-nav = "^1.2.0"
 mkdocstrings = {extras = ["python"], version = "^0.25.1"}
+deepdiff = "^7.0.1"
 
 [build-system]
 requires = ["poetry-core"]
@@ -29,3 +30,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
 addopts = "--cov --cov-report term-missing"
+filterwarnings = [
+    "ignore::UserWarning"
+]

@@ -114,12 +114,14 @@ def test_searchby_date_valid_value_invalid_value():
         search_by.is_valid_value(valid_value)
 
 def test_searchby_date_condition_true(note):
+    note.write()
     search_by = SearchByDate()
     today = datetime.today().strftime('%Y-%m-%d')
     field = Field('date', ['creation_time', today, '9999-01-01'], 'file')
     assert search_by.condition(note, field)
 
 def test_searchby_date_condition_false(note):
+    note.write()
     search_by = SearchByDate()
     today = datetime.today().strftime('%Y-%m-%d')
     field = Field('date', ['creation_time', '1970-01-01', today], 'file')
@@ -132,12 +134,14 @@ def test_searchby_date_search_empty_notes():
     assert search_by.search(notes, field) == []
 
 def test_searchby_date_search_non_empty_notes_with_valid_search(note):
+    note.write()
     search_by = SearchByDate()
     field = Field('date', ['creation_time', '1970-01-01', '9999-01-01'], 'file')
     notes = [note]
     assert search_by.search(notes, field) == notes
 
 def test_searchby_date_search_non_empty_notes_with_invalid_search(note):
+    note.write()
     search_by = SearchByDate()
     tomorrow = (datetime.today() + timedelta(days=1)).strftime('%Y-%m-%d')
     field = Field('date', ['creation_time', tomorrow, '9999-01-01'], 'file')

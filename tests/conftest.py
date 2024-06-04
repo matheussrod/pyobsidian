@@ -1,14 +1,16 @@
 
 from pyobsidian.filter import Field, FilterField
-from pyobsidian.note import Note, NoteReader
+from pyobsidian.note import Note
 import pytest
 import shutil
 import tempfile
 import os
+import textwrap
+
 
 @pytest.fixture(scope='session')
 def content():
-    content = """       
+    content = textwrap.dedent("""       
     ---
     title: Sample Note
     tags: [test, sample]
@@ -16,12 +18,12 @@ def content():
     ---
     This is a sample note for testing purposes.
     Inline tags: #tag1 #tag2
-    """
+    """)
     return content
 
 @pytest.fixture(scope='session')
 def content2():
-    content = """       
+    content = textwrap.dedent("""
     ---
     title: Sample Note
     tags: [test, sample, tag]
@@ -29,7 +31,7 @@ def content2():
     ---
     This is a sample note for testing purposes.
     Inline tags: #tag1 #tag2 #tag3
-    """
+    """)
     return content
 
 @pytest.fixture()
@@ -42,15 +44,9 @@ def invalid_yaml_content():
     return invalid_content
 
 @pytest.fixture()
-def note_reader(tmp_path, content):
+def note(tmp_path, content):
     tmp_file = tmp_path / 'test_file.md'
-    tmp_file.write_text(content)
-    note_reader = NoteReader(str(tmp_file))
-    return note_reader
-
-@pytest.fixture()
-def note(note_reader):
-    return Note(note_reader.path)
+    return Note(str(tmp_file), content)
 
 @pytest.fixture()
 def field():
@@ -60,7 +56,8 @@ def field():
 def filter_field():
     return FilterField(Field('folder', 'value', 'file'), 'and')
 
-@pytest.fixture(scope='session')
+#@pytest.fixture(scope='session')
+@pytest.fixture()
 def vault_dir(content, content2):
     tmp_dir = tempfile.mkdtemp()
     subfolder = os.path.join(tmp_dir, 'folder')

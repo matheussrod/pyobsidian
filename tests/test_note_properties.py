@@ -235,25 +235,19 @@ def test_propertie_filename():
     expected_filename = 'note'
     assert note_filename == expected_filename
 
-def test_propertie_last_access_time(note_reader):
-    path = note_reader.path
-    content = note_reader.read()
-    note_properties = NoteProperties(path=path, content=content)
-    last_access_time = note_properties.last_access_time
+def test_propertie_last_access_time(note):
+    note.write()
+    last_access_time = note.properties.last_access_time
     assert last_access_time is not None
 
-def test_propertie_last_modification_time(note_reader):
-    path = note_reader.path
-    content = note_reader.read()
-    note_properties = NoteProperties(path=path, content=content)
-    last_modification_time = note_properties.last_modification_time
+def test_propertie_last_modification_time(note):
+    note.write()
+    last_modification_time = note.properties.last_modification_time
     assert last_modification_time is not None
 
-def test_propertie_creation_time(note_reader):
-    path = note_reader.path
-    content = note_reader.read()
-    note_properties = NoteProperties(path=path, content=content)
-    creation_time = note_properties.creation_time
+def test_propertie_creation_time(note):
+    note.write()
+    creation_time = note.properties.creation_time
     assert creation_time is not None
 
 def test_propertie_folder():
@@ -328,3 +322,11 @@ def test_propertie_related_notes():
         'inline': ['note1', 'note2']
     }
     assert related_notes == expected_related_notes
+
+def test_propertie_set_content():
+    content = "Some content"
+    note_properties = NoteProperties('', content)
+    note_properties.content = 'New content'
+    new_content = note_properties.content
+    expected_content = 'New content'
+    assert new_content == expected_content

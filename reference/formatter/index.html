@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../adder_op/">
+        <link rel="prev" href="../filter/">
       
       
-        <link rel="next" href="../formatter/">
+        <link rel="next" href="../helpers/">
       
       
       <link rel="icon" href="../../assets/imgs/logo.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>filter - pyobsidianmd</title>
+        <title>formatter - pyobsidianmd</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#filter" class="md-skip">
+        <a href="#formatter" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              filter
+              formatter
             
           </span>
         </div>
@@ -529,6 +529,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../filter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    filter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -545,7 +566,7 @@
           
   
   <span class="md-ellipsis">
-    filter
+    formatter
   </span>
   
 
@@ -556,7 +577,7 @@
         
   
   <span class="md-ellipsis">
-    filter
+    formatter
   </span>
   
 
@@ -578,46 +599,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter" class="md-nav__link">
+  <a href="#pyobsidian.formatter" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;filter
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;formatter
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field" class="md-nav__link">
+  <a href="#pyobsidian.formatter.Formatter" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Field
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Formatter
     </span>
   </a>
   
-    <nav class="md-nav" aria-label=" Field">
+    <nav class="md-nav" aria-label=" Formatter">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.key" class="md-nav__link">
+  <a href="#pyobsidian.formatter.Formatter.format" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;key
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.occurrence" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;occurrence
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.value" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;value
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;format
     </span>
   </a>
   
@@ -629,42 +632,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter" class="md-nav__link">
+  <a href="#pyobsidian.formatter.FormatterContentInline" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Filter
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterContentInline
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label=" Filter">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter.fields" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;fields
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter.add_field" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;add_field
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter.FilterField" class="md-nav__link">
+  <a href="#pyobsidian.formatter.FormatterRelatedNoteInline" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FilterField
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterRelatedNoteInline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyobsidian.formatter.FormatterRelatedNoteOpMkHeader" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterRelatedNoteOpMkHeader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyobsidian.formatter.FormatterRelatedNoteYaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterRelatedNoteYaml
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyobsidian.formatter.FormatterTagInline" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterTagInline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyobsidian.formatter.FormatterTagOpMkHeader" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterTagOpMkHeader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyobsidian.formatter.FormatterYaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterYaml
     </span>
   </a>
   
@@ -674,27 +698,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../formatter/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    formatter
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -934,46 +937,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter" class="md-nav__link">
+  <a href="#pyobsidian.formatter" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;filter
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;formatter
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field" class="md-nav__link">
+  <a href="#pyobsidian.formatter.Formatter" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Field
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Formatter
     </span>
   </a>
   
-    <nav class="md-nav" aria-label=" Field">
+    <nav class="md-nav" aria-label=" Formatter">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.key" class="md-nav__link">
+  <a href="#pyobsidian.formatter.Formatter.format" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;key
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.occurrence" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;occurrence
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.value" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;value
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;format
     </span>
   </a>
   
@@ -985,42 +970,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter" class="md-nav__link">
+  <a href="#pyobsidian.formatter.FormatterContentInline" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Filter
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterContentInline
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label=" Filter">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter.fields" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;fields
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter.add_field" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;add_field
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter.FilterField" class="md-nav__link">
+  <a href="#pyobsidian.formatter.FormatterRelatedNoteInline" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FilterField
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterRelatedNoteInline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyobsidian.formatter.FormatterRelatedNoteOpMkHeader" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterRelatedNoteOpMkHeader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyobsidian.formatter.FormatterRelatedNoteYaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterRelatedNoteYaml
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyobsidian.formatter.FormatterTagInline" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterTagInline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyobsidian.formatter.FormatterTagOpMkHeader" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterTagOpMkHeader
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyobsidian.formatter.FormatterYaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FormatterYaml
     </span>
   </a>
   
@@ -1041,31 +1047,18 @@
                   
 
 
-<h1 id="filter">filter</h1>
+<h1 id="formatter">formatter</h1>
 
 
 <div class="doc doc-object doc-module">
 
 
 
-<a id="pyobsidian.filter"></a>
+<a id="pyobsidian.formatter"></a>
     <div class="doc doc-contents first">
 
-      <p>This module contains the classes that represent Obsidian filters.
-Filters are used to search through Obsidian notes. 
-See <a href="../searchby/">searchby</a> to understand how filters are used.</p>
-<p>A filter is composed of one or more fields, each field having an associated mode.
-Each field has a key, value, and occurrence.</p>
-<ul>
-<li>key: The key of the field. Defines which search method will be used. See <a href="../searchby/">get_search_strategies</a> for more information.</li>
-<li>value: The value of the field. Values that will be searched based on the chosen search method</li>
-<li>occurrence: The occurrence of the field value. Can be 'inline', 'yaml', or 'file'.<ul>
-<li>inline: occurs inline</li>
-<li>yaml: occurs in yaml</li>
-<li>file: both inline and yaml</li>
-</ul>
-</li>
-</ul>
+      <p>This module contains the classes that represent formatters.</p>
+<p>Formatters are used to format the content that will be added in notes.</p>
 
 
 
@@ -1082,67 +1075,20 @@ Each field has a key, value, and occurrence.</p>
 
 
 
-<h2 id="pyobsidian.filter.Field" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">Field</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">FieldKey</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">FieldValue</span><span class="p">,</span> <span class="n">occurrence</span><span class="p">:</span> <span class="n">FieldOcurrence</span><span class="p">)</span></code>
+<h2 id="pyobsidian.formatter.Formatter" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code>Formatter</code>
+
 
 </h2>
 
 
     <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="abc.ABC">ABC</span></code></p>
 
 
-      <p>Represents a filter field.</p>
+      <p>Base class for all formatters.</p>
 
-
-<p><span class="doc-section-title">Parameters:</span></p>
-    <ul>
-        <li class="doc-section-item field-body">
-          <b><code>key</code></b>
-              (<code><span title="pyobsidian.filter.FieldKey">FieldKey</span></code>)
-          –
-          <div class="doc-md-description">
-            <p>The key of the field</p>
-          </div>
-        </li>
-        <li class="doc-section-item field-body">
-          <b><code>value</code></b>
-              (<code><span title="pyobsidian.filter.FieldValue">FieldValue</span></code>)
-          –
-          <div class="doc-md-description">
-            <p>The value of the field</p>
-          </div>
-        </li>
-        <li class="doc-section-item field-body">
-          <b><code>occurrence</code></b>
-              (<code><span title="pyobsidian.filter.FieldOcurrence">FieldOcurrence</span></code>)
-          –
-          <div class="doc-md-description">
-            <p>The occurrence of the field</p>
-          </div>
-        </li>
-    </ul>
-
-                  <details class="quote">
-                    <summary>Source code in <code>pyobsidian/filter.py</code></summary>
-                    <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
-    <span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> 
-    <span class="n">key</span><span class="p">:</span> <span class="n">FieldKey</span><span class="p">,</span> 
-    <span class="n">value</span><span class="p">:</span> <span class="n">FieldValue</span><span class="p">,</span> 
-    <span class="n">occurrence</span><span class="p">:</span> <span class="n">FieldOcurrence</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">__key</span> <span class="o">=</span> <span class="n">key</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">__value</span> <span class="o">=</span> <span class="n">value</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">__occurrence</span> <span class="o">=</span> <span class="n">occurrence</span>
-</code></pre></div></td></tr></table></div>
-                  </details>
 
 
 
@@ -1153,185 +1099,35 @@ Each field has a key, value, and occurrence.</p>
 
 
 
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h3 id="pyobsidian.filter.Field.key" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">key</span><span class="p">:</span> <span class="n">FieldKey</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h3>
-
-
-    <div class="doc doc-contents ">
-
-      <p>The key of the field</p>
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h3 id="pyobsidian.filter.Field.occurrence" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">occurrence</span><span class="p">:</span> <span class="n">FieldOcurrence</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h3>
-
-
-    <div class="doc doc-contents ">
-
-      <p>The occurrence of the field</p>
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h3 id="pyobsidian.filter.Field.value" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">value</span><span class="p">:</span> <span class="n">FieldValue</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h3>
-
-
-    <div class="doc doc-contents ">
-
-      <p>The value of the field</p>
-    </div>
-
-</div>
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="pyobsidian.filter.Filter" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">Filter</span><span class="p">(</span><span class="n">fields</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">FilterField</span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-
-
-      <p>Represents a filter for notes.</p>
-
-
-<p><span class="doc-section-title">Parameters:</span></p>
-    <ul>
-        <li class="doc-section-item field-body">
-          <b><code>fields</code></b>
-              (<code>list[<a class="autorefs autorefs-internal" title="pyobsidian.filter.FilterField" href="#pyobsidian.filter.FilterField">FilterField</a>]</code>, default:
-                  <code>[]</code>
-)
-          –
-          <div class="doc-md-description">
-            <p>The list of filter fields</p>
-          </div>
-        </li>
-    </ul>
-
-                  <details class="quote">
-                    <summary>Source code in <code>pyobsidian/filter.py</code></summary>
-                    <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">96</span>
-<span class="normal">97</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">fields</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">FilterField</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">__fields</span> <span class="o">=</span> <span class="n">fields</span>
-</code></pre></div></td></tr></table></div>
-                  </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h3 id="pyobsidian.filter.Filter.fields" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">fields</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">FilterField</span><span class="p">]</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h3>
-
-
-    <div class="doc doc-contents ">
-
-      <p>The list of filter fields for the current object.</p>
-
-
-<p><span class="doc-section-title">Returns:</span></p>
-    <ul>
-        <li class="doc-section-item field-body">
-              <code>list[<a class="autorefs autorefs-internal" title="pyobsidian.filter.FilterField" href="#pyobsidian.filter.FilterField">FilterField</a>]</code>
-          –
-          <div class="doc-md-description">
-            <p>The list of filter fields for the current object.</p>
-          </div>
-        </li>
-    </ul>
-    </div>
-
-</div>
 
 
 
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pyobsidian.filter.Filter.add_field" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">add_field</span><span class="p">(</span><span class="n">field</span><span class="p">:</span> <span class="n">FilterField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Filter</span></code>
+<h3 id="pyobsidian.formatter.Formatter.format" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="nb">format</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-abstractmethod"><code>abstractmethod</code></small>
+  </span>
 
 </h3>
 
 
     <div class="doc doc-contents ">
 
-      <p>Adds a new filter field to the filter and returns a new Filter object.</p>
+      <p>Format the content.</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>field</code></b>
-              (<code><a class="autorefs autorefs-internal" title="pyobsidian.filter.FilterField" href="#pyobsidian.filter.FilterField">FilterField</a></code>)
+          <b><code>value</code></b>
+              (<code>str | list[str]</code>)
           –
           <div class="doc-md-description">
-            <p>The filter field to be added.</p>
+            <p>The content to format.</p>
           </div>
         </li>
     </ul>
@@ -1340,49 +1136,45 @@ Each field has a key, value, and occurrence.</p>
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-              <code><a class="autorefs autorefs-internal" title="pyobsidian.filter.Filter" href="#pyobsidian.filter.Filter">Filter</a></code>
+              <code>str | list[str]</code>
           –
           <div class="doc-md-description">
-            <p>A new Filter object with the added filter field.</p>
+            <p>The formatted content.</p>
           </div>
         </li>
     </ul>
 
             <details class="quote">
-              <summary>Source code in <code>pyobsidian/filter.py</code></summary>
-              <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">125</span>
-<span class="normal">126</span>
-<span class="normal">127</span>
-<span class="normal">128</span>
-<span class="normal">129</span>
-<span class="normal">130</span>
-<span class="normal">131</span>
-<span class="normal">132</span>
-<span class="normal">133</span>
-<span class="normal">134</span>
-<span class="normal">135</span>
-<span class="normal">136</span>
-<span class="normal">137</span>
-<span class="normal">138</span>
-<span class="normal">139</span>
-<span class="normal">140</span>
-<span class="normal">141</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_field</span><span class="p">(</span><span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">field</span><span class="p">:</span> <span class="n">FilterField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Filter</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Adds a new filter field to the filter and returns a new Filter object.</span>
+              <summary>Source code in <code>pyobsidian/formatter.py</code></summary>
+              <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Format the content.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    field : FilterField</span>
-<span class="sd">        The filter field to be added.</span>
+<span class="sd">    value : str | list[str]</span>
+<span class="sd">        The content to format.</span>
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">    Filter</span>
-<span class="sd">        A new Filter object with the added filter field.</span>
+<span class="sd">    str | list[str]</span>
+<span class="sd">        The formatted content.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">cur_fields</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fields</span>
-    <span class="n">new_fields</span> <span class="o">=</span> <span class="n">cur_fields</span> <span class="o">+</span> <span class="p">[</span><span class="n">field</span><span class="p">]</span>
-    <span class="n">new_filter</span> <span class="o">=</span> <span class="n">Filter</span><span class="p">(</span><span class="n">new_fields</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">new_filter</span>
+    <span class="o">...</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1401,41 +1193,253 @@ Each field has a key, value, and occurrence.</p>
 
 
 
-<h2 id="pyobsidian.filter.FilterField" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">FilterField</span><span class="p">(</span><span class="n">field</span><span class="p">:</span> <span class="n">Field</span><span class="p">,</span> <span class="n">mode</span><span class="p">:</span> <span class="n">FilterMode</span><span class="p">)</span></code>
+<h2 id="pyobsidian.formatter.FormatterContentInline" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code>FormatterContentInline</code>
 
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
 
 </h2>
 
 
     <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pyobsidian.formatter.Formatter" href="#pyobsidian.formatter.Formatter">Formatter</a></code></p>
 
 
-      <p>Represents a filter field.</p>
+      <p>This formatter adds two line breaks at the beginning and end.</p>
 
 
-<p><span class="doc-section-title">Parameters:</span></p>
-    <ul>
-        <li class="doc-section-item field-body">
-          <b><code>field</code></b>
-              (<code><a class="autorefs autorefs-internal" title="pyobsidian.filter.Field" href="#pyobsidian.filter.Field">Field</a></code>)
-          –
-          <div class="doc-md-description">
-            <p>The filter field</p>
-          </div>
-        </li>
-        <li class="doc-section-item field-body">
-          <b><code>mode</code></b>
-              (<code><span title="pyobsidian.filter.FilterMode">FilterMode</span></code>)
-          –
-          <div class="doc-md-description">
-            <p>The mode of the filter</p>
-          </div>
-        </li>
-    </ul>
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyobsidian.formatter.FormatterRelatedNoteInline" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code>FormatterRelatedNoteInline</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pyobsidian.formatter.Formatter" href="#pyobsidian.formatter.Formatter">Formatter</a></code></p>
+
+
+      <p>This formatter adds "[[" and "]]" to each word entered and adds two line breaks at the beginning and end.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyobsidian.formatter.FormatterRelatedNoteOpMkHeader" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code>FormatterRelatedNoteOpMkHeader</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pyobsidian.formatter.FormatterRelatedNoteInline" href="#pyobsidian.formatter.FormatterRelatedNoteInline">FormatterRelatedNoteInline</a></code></p>
+
+
+      <p>This formatter adds "[[" and "]]" to each word entered and adds two line breaks at the beginning and end.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyobsidian.formatter.FormatterRelatedNoteYaml" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code>FormatterRelatedNoteYaml</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pyobsidian.formatter.Formatter" href="#pyobsidian.formatter.Formatter">Formatter</a></code></p>
+
+
+      <p>This formatter adds "[[" and "]]" to each word entered and convert to list.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyobsidian.formatter.FormatterTagInline" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code>FormatterTagInline</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pyobsidian.formatter.Formatter" href="#pyobsidian.formatter.Formatter">Formatter</a></code></p>
+
+
+      <p>This formatter adds "#" to each word entered and adds two line breaks at the beginning and end.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyobsidian.formatter.FormatterTagOpMkHeader" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code>FormatterTagOpMkHeader</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pyobsidian.formatter.FormatterTagInline" href="#pyobsidian.formatter.FormatterTagInline">FormatterTagInline</a></code></p>
+
+
+      <p>This formatter adds "#" to each word entered and adds two line breaks at the beginning and end.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="pyobsidian.formatter.FormatterYaml" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code>FormatterYaml</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pyobsidian.formatter.Formatter" href="#pyobsidian.formatter.Formatter">Formatter</a></code></p>
+
+
+      <p>This formatter just converts the content to list.</p>
 
 
 
@@ -1501,7 +1505,7 @@ Each field has a key, value, and occurrence.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../adder_op/" class="md-footer__link md-footer__link--prev" aria-label="Previous: adder_op">
+          <a href="../filter/" class="md-footer__link md-footer__link--prev" aria-label="Previous: filter">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1511,20 +1515,20 @@ Each field has a key, value, and occurrence.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                adder_op
+                filter
               </div>
             </div>
           </a>
         
         
           
-          <a href="../formatter/" class="md-footer__link md-footer__link--next" aria-label="Next: formatter">
+          <a href="../helpers/" class="md-footer__link md-footer__link--next" aria-label="Next: helpers">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                formatter
+                helpers
               </div>
             </div>
             <div class="md-footer__button md-icon">

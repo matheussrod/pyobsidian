@@ -236,7 +236,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="reference/filter/" class="md-tabs__link">
+        <a href="reference/adder/" class="md-tabs__link">
           
   
     
@@ -438,6 +438,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -478,11 +488,116 @@
   
   
     <li class="md-nav__item">
+      <a href="reference/adder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    adder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/adder_op/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    adder_op
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="reference/filter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     filter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/formatter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    formatter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/helpers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    helpers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/markdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    markdown
   </span>
   
 
@@ -741,18 +856,20 @@
 <div class="language-python highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">pyobsidian</span>
 </code></pre></div>
 <h2 id="usage">Usage</h2>
-<p>A common workflow used in this library is define a vault, create a filter and execute it to find notes that match the filter conditions. This workflow can see bellow:</p>
+<p>A common workflow used in this library is to define a vault, create a sequence of steps, and execute it to manipulate notes. This workflow can be seen below. This workflow can see bellow:</p>
 <p style="text-align: center;">
     <img src="https://raw.githubusercontent.com/matheussrod/pyobsidian/main/docs/assets/imgs/workflow.svg">
 </p>
 
-<p>This can be translated to code in a very simple way:
+<p>This can be translated to code in a very simple way.
 <div class="language-python highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pyobsidian.vault</span> <span class="kn">import</span> <span class="n">Vault</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pyobsidian.adder_op</span> <span class="kn">import</span> <span class="n">OpMkHeader</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">vault</span> <span class="o">=</span> <span class="n">Vault</span><span class="p">(</span><span class="s1">&#39;your/obsidian/vault/path&#39;</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">new_vault</span> <span class="o">=</span> <span class="p">(</span>
 <span class="o">...</span>    <span class="n">vault</span>
 <span class="o">...</span>    <span class="o">.</span><span class="n">find_by</span><span class="p">(</span><span class="s1">&#39;folder&#39;</span><span class="p">,</span> <span class="s1">&#39;some_folder&#39;</span><span class="p">)</span>
 <span class="o">...</span>    <span class="o">.</span><span class="n">find_by</span><span class="p">(</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span> <span class="s1">&#39;some_tag&#39;</span><span class="p">)</span>
+<span class="o">...</span>    <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;content&#39;</span><span class="p">,</span> <span class="s1">&#39;# Some header&#39;</span><span class="p">,</span> <span class="n">OpMkHeader</span><span class="p">(</span><span class="s1">&#39;|&gt;</span><span class="si">{1}</span><span class="s1">h1&#39;</span><span class="p">))</span>
 <span class="o">...</span>    <span class="o">.</span><span class="n">execute</span><span class="p">()</span>
 <span class="o">...</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">vault</span><span class="p">)</span>
@@ -760,6 +877,7 @@
     <span class="n">path</span><span class="o">=</span><span class="s1">&#39;your/obsidian/vault/path&#39;</span><span class="p">,</span>
     <span class="n">notes</span><span class="o">=</span><span class="p">[],</span>
     <span class="nb">filter</span><span class="o">=</span><span class="n">Filter</span><span class="p">(),</span>
+    <span class="n">adder</span><span class="o">=</span><span class="n">Adder</span><span class="p">()</span>
 <span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">new_vault</span><span class="p">)</span>
 <span class="n">Vault</span><span class="p">(</span>
@@ -769,6 +887,11 @@
         <span class="p">[</span>
             <span class="n">FilterField</span><span class="p">(</span><span class="n">Field</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;folder&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;some_folder&#39;</span><span class="p">,</span> <span class="n">occurrence</span><span class="o">=</span><span class="s1">&#39;file&#39;</span><span class="p">),</span> <span class="n">mode</span> <span class="o">=</span> <span class="s1">&#39;and&#39;</span><span class="p">),</span>
             <span class="n">FilterField</span><span class="p">(</span><span class="n">Field</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;tag&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;some_tag&#39;</span><span class="p">,</span> <span class="n">occurrence</span><span class="o">=</span><span class="s1">&#39;file&#39;</span><span class="p">),</span> <span class="n">mode</span> <span class="o">=</span> <span class="s1">&#39;and&#39;</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">),</span>
+    <span class="n">adder</span><span class="o">=</span><span class="n">Adder</span><span class="p">(</span>
+        <span class="p">[</span>
+            <span class="n">AdderField</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;content&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;# Some header&#39;</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="n">OpMkHeader</span><span class="p">(</span><span class="s1">&#39;&lt;|</span><span class="si">{1}</span><span class="s1">h1&#39;</span><span class="p">))</span>
         <span class="p">]</span>
     <span class="p">)</span>
 <span class="p">)</span>

@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../adder_op/">
+        <link rel="prev" href="../adder/">
       
       
-        <link rel="next" href="../formatter/">
+        <link rel="next" href="../filter/">
       
       
       <link rel="icon" href="../../assets/imgs/logo.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>filter - pyobsidianmd</title>
+        <title>adder_op - pyobsidianmd</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#filter" class="md-skip">
+        <a href="#adder_op" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              filter
+              adder_op
             
           </span>
         </div>
@@ -508,27 +508,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../adder_op/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    adder_op
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -545,7 +524,7 @@
           
   
   <span class="md-ellipsis">
-    filter
+    adder_op
   </span>
   
 
@@ -556,7 +535,7 @@
         
   
   <span class="md-ellipsis">
-    filter
+    adder_op
   </span>
   
 
@@ -578,46 +557,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter" class="md-nav__link">
+  <a href="#pyobsidian.adder_op" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;filter
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;adder_op
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field" class="md-nav__link">
+  <a href="#pyobsidian.adder_op.Op" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Field
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Op
     </span>
   </a>
   
-    <nav class="md-nav" aria-label=" Field">
+    <nav class="md-nav" aria-label=" Op">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.key" class="md-nav__link">
+  <a href="#pyobsidian.adder_op.Op.id" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;key
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;id
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.occurrence" class="md-nav__link">
+  <a href="#pyobsidian.adder_op.Op.build_operator" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;occurrence
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.value" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;value
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_operator
     </span>
   </a>
   
@@ -629,28 +599,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter" class="md-nav__link">
+  <a href="#pyobsidian.adder_op.OpMkHeader" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Filter
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;OpMkHeader
     </span>
   </a>
   
-    <nav class="md-nav" aria-label=" Filter">
+    <nav class="md-nav" aria-label=" OpMkHeader">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter.fields" class="md-nav__link">
+  <a href="#pyobsidian.adder_op.OpMkHeader.build_operator" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;fields
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter.add_field" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;add_field
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_operator
     </span>
   </a>
   
@@ -658,15 +619,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pyobsidian.filter.FilterField" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FilterField
-    </span>
-  </a>
   
 </li>
       
@@ -674,6 +626,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    filter
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -934,46 +907,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter" class="md-nav__link">
+  <a href="#pyobsidian.adder_op" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;filter
+      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;adder_op
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field" class="md-nav__link">
+  <a href="#pyobsidian.adder_op.Op" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Field
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Op
     </span>
   </a>
   
-    <nav class="md-nav" aria-label=" Field">
+    <nav class="md-nav" aria-label=" Op">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.key" class="md-nav__link">
+  <a href="#pyobsidian.adder_op.Op.id" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;key
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;id
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.occurrence" class="md-nav__link">
+  <a href="#pyobsidian.adder_op.Op.build_operator" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;occurrence
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Field.value" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;value
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_operator
     </span>
   </a>
   
@@ -985,28 +949,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter" class="md-nav__link">
+  <a href="#pyobsidian.adder_op.OpMkHeader" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Filter
+      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;OpMkHeader
     </span>
   </a>
   
-    <nav class="md-nav" aria-label=" Filter">
+    <nav class="md-nav" aria-label=" OpMkHeader">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter.fields" class="md-nav__link">
+  <a href="#pyobsidian.adder_op.OpMkHeader.build_operator" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;fields
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pyobsidian.filter.Filter.add_field" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;add_field
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;build_operator
     </span>
   </a>
   
@@ -1014,15 +969,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pyobsidian.filter.FilterField" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FilterField
-    </span>
-  </a>
   
 </li>
       
@@ -1041,31 +987,19 @@
                   
 
 
-<h1 id="filter">filter</h1>
+<h1 id="adder_op">adder_op</h1>
 
 
 <div class="doc doc-object doc-module">
 
 
 
-<a id="pyobsidian.filter"></a>
+<a id="pyobsidian.adder_op"></a>
     <div class="doc doc-contents first">
 
-      <p>This module contains the classes that represent Obsidian filters.
-Filters are used to search through Obsidian notes. 
-See <a href="../searchby/">searchby</a> to understand how filters are used.</p>
-<p>A filter is composed of one or more fields, each field having an associated mode.
-Each field has a key, value, and occurrence.</p>
-<ul>
-<li>key: The key of the field. Defines which search method will be used. See <a href="../searchby/">get_search_strategies</a> for more information.</li>
-<li>value: The value of the field. Values that will be searched based on the chosen search method</li>
-<li>occurrence: The occurrence of the field value. Can be 'inline', 'yaml', or 'file'.<ul>
-<li>inline: occurs inline</li>
-<li>yaml: occurs in yaml</li>
-<li>file: both inline and yaml</li>
-</ul>
-</li>
-</ul>
+      <p>This module contains the classes that represent Obsidian adder operators.</p>
+<p>Operators make it possible to create very specific ways to adding content to notes.
+They are generally used together with AdderWhere.</p>
 
 
 
@@ -1082,65 +1016,26 @@ Each field has a key, value, and occurrence.</p>
 
 
 
-<h2 id="pyobsidian.filter.Field" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">Field</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">FieldKey</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">FieldValue</span><span class="p">,</span> <span class="n">occurrence</span><span class="p">:</span> <span class="n">FieldOcurrence</span><span class="p">)</span></code>
+<h2 id="pyobsidian.adder_op.Op" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">Op</span><span class="p">(</span><span class="n">operator</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
 
 </h2>
 
 
     <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="abc.ABC">ABC</span></code></p>
 
 
-      <p>Represents a filter field.</p>
-
-
-<p><span class="doc-section-title">Parameters:</span></p>
-    <ul>
-        <li class="doc-section-item field-body">
-          <b><code>key</code></b>
-              (<code><span title="pyobsidian.filter.FieldKey">FieldKey</span></code>)
-          –
-          <div class="doc-md-description">
-            <p>The key of the field</p>
-          </div>
-        </li>
-        <li class="doc-section-item field-body">
-          <b><code>value</code></b>
-              (<code><span title="pyobsidian.filter.FieldValue">FieldValue</span></code>)
-          –
-          <div class="doc-md-description">
-            <p>The value of the field</p>
-          </div>
-        </li>
-        <li class="doc-section-item field-body">
-          <b><code>occurrence</code></b>
-              (<code><span title="pyobsidian.filter.FieldOcurrence">FieldOcurrence</span></code>)
-          –
-          <div class="doc-md-description">
-            <p>The occurrence of the field</p>
-          </div>
-        </li>
-    </ul>
+      <p>Base class for all adder operators.</p>
 
                   <details class="quote">
-                    <summary>Source code in <code>pyobsidian/filter.py</code></summary>
-                    <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
-    <span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> 
-    <span class="n">key</span><span class="p">:</span> <span class="n">FieldKey</span><span class="p">,</span> 
-    <span class="n">value</span><span class="p">:</span> <span class="n">FieldValue</span><span class="p">,</span> 
-    <span class="n">occurrence</span><span class="p">:</span> <span class="n">FieldOcurrence</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">__key</span> <span class="o">=</span> <span class="n">key</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">__value</span> <span class="o">=</span> <span class="n">value</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">__occurrence</span> <span class="o">=</span> <span class="n">occurrence</span>
+                    <summary>Source code in <code>pyobsidian/adder_op.py</code></summary>
+                    <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">operator</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">__raw_operator</span> <span class="o">=</span> <span class="n">operator</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">__operator</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_operator</span><span class="p">(</span><span class="n">operator</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
                   </details>
 
@@ -1158,10 +1053,11 @@ Each field has a key, value, and occurrence.</p>
 
 
 
-<h3 id="pyobsidian.filter.Field.key" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">key</span><span class="p">:</span> <span class="n">FieldKey</span></code>
+<h3 id="pyobsidian.adder_op.Op.id" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="nb">id</span><span class="p">:</span> <span class="nb">str</span></code>
 
   <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-abstractmethod"><code>abstractmethod</code></small>
       <small class="doc doc-label doc-label-property"><code>property</code></small>
   </span>
 
@@ -1170,140 +1066,7 @@ Each field has a key, value, and occurrence.</p>
 
     <div class="doc doc-contents ">
 
-      <p>The key of the field</p>
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h3 id="pyobsidian.filter.Field.occurrence" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">occurrence</span><span class="p">:</span> <span class="n">FieldOcurrence</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h3>
-
-
-    <div class="doc doc-contents ">
-
-      <p>The occurrence of the field</p>
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h3 id="pyobsidian.filter.Field.value" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">value</span><span class="p">:</span> <span class="n">FieldValue</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h3>
-
-
-    <div class="doc doc-contents ">
-
-      <p>The value of the field</p>
-    </div>
-
-</div>
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="pyobsidian.filter.Filter" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">Filter</span><span class="p">(</span><span class="n">fields</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">FilterField</span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-
-
-      <p>Represents a filter for notes.</p>
-
-
-<p><span class="doc-section-title">Parameters:</span></p>
-    <ul>
-        <li class="doc-section-item field-body">
-          <b><code>fields</code></b>
-              (<code>list[<a class="autorefs autorefs-internal" title="pyobsidian.filter.FilterField" href="#pyobsidian.filter.FilterField">FilterField</a>]</code>, default:
-                  <code>[]</code>
-)
-          –
-          <div class="doc-md-description">
-            <p>The list of filter fields</p>
-          </div>
-        </li>
-    </ul>
-
-                  <details class="quote">
-                    <summary>Source code in <code>pyobsidian/filter.py</code></summary>
-                    <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">96</span>
-<span class="normal">97</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">fields</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">FilterField</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">__fields</span> <span class="o">=</span> <span class="n">fields</span>
-</code></pre></div></td></tr></table></div>
-                  </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h3 id="pyobsidian.filter.Filter.fields" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">fields</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">FilterField</span><span class="p">]</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h3>
-
-
-    <div class="doc doc-contents ">
-
-      <p>The list of filter fields for the current object.</p>
-
-
-<p><span class="doc-section-title">Returns:</span></p>
-    <ul>
-        <li class="doc-section-item field-body">
-              <code>list[<a class="autorefs autorefs-internal" title="pyobsidian.filter.FilterField" href="#pyobsidian.filter.FilterField">FilterField</a>]</code>
-          –
-          <div class="doc-md-description">
-            <p>The list of filter fields for the current object.</p>
-          </div>
-        </li>
-    </ul>
+      <p>The identifier of the operator.</p>
     </div>
 
 </div>
@@ -1313,25 +1076,29 @@ Each field has a key, value, and occurrence.</p>
 <div class="doc doc-object doc-function">
 
 
-<h3 id="pyobsidian.filter.Filter.add_field" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">add_field</span><span class="p">(</span><span class="n">field</span><span class="p">:</span> <span class="n">FilterField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Filter</span></code>
+<h3 id="pyobsidian.adder_op.Op.build_operator" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">build_operator</span><span class="p">(</span><span class="n">operator</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-abstractmethod"><code>abstractmethod</code></small>
+  </span>
 
 </h3>
 
 
     <div class="doc doc-contents ">
 
-      <p>Adds a new filter field to the filter and returns a new Filter object.</p>
+      <p>Build the operator.</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>field</code></b>
-              (<code><a class="autorefs autorefs-internal" title="pyobsidian.filter.FilterField" href="#pyobsidian.filter.FilterField">FilterField</a></code>)
+          <b><code>operator</code></b>
+              (<code>str</code>)
           –
           <div class="doc-md-description">
-            <p>The filter field to be added.</p>
+            <p>The operator string.</p>
           </div>
         </li>
     </ul>
@@ -1340,49 +1107,45 @@ Each field has a key, value, and occurrence.</p>
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-              <code><a class="autorefs autorefs-internal" title="pyobsidian.filter.Filter" href="#pyobsidian.filter.Filter">Filter</a></code>
+              <code><span title="typing.Any">Any</span></code>
           –
           <div class="doc-md-description">
-            <p>A new Filter object with the added filter field.</p>
+            <p>The operator.</p>
           </div>
         </li>
     </ul>
 
             <details class="quote">
-              <summary>Source code in <code>pyobsidian/filter.py</code></summary>
-              <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">125</span>
-<span class="normal">126</span>
-<span class="normal">127</span>
-<span class="normal">128</span>
-<span class="normal">129</span>
-<span class="normal">130</span>
-<span class="normal">131</span>
-<span class="normal">132</span>
-<span class="normal">133</span>
-<span class="normal">134</span>
-<span class="normal">135</span>
-<span class="normal">136</span>
-<span class="normal">137</span>
-<span class="normal">138</span>
-<span class="normal">139</span>
-<span class="normal">140</span>
-<span class="normal">141</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_field</span><span class="p">(</span><span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">field</span><span class="p">:</span> <span class="n">FilterField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Filter</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Adds a new filter field to the filter and returns a new Filter object.</span>
+              <summary>Source code in <code>pyobsidian/adder_op.py</code></summary>
+              <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">build_operator</span><span class="p">(</span><span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">operator</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Build the operator.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    field : FilterField</span>
-<span class="sd">        The filter field to be added.</span>
+<span class="sd">    operator : str</span>
+<span class="sd">        The operator string.</span>
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">    Filter</span>
-<span class="sd">        A new Filter object with the added filter field.</span>
+<span class="sd">    Any</span>
+<span class="sd">        The operator.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">cur_fields</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fields</span>
-    <span class="n">new_fields</span> <span class="o">=</span> <span class="n">cur_fields</span> <span class="o">+</span> <span class="p">[</span><span class="n">field</span><span class="p">]</span>
-    <span class="n">new_filter</span> <span class="o">=</span> <span class="n">Filter</span><span class="p">(</span><span class="n">new_fields</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">new_filter</span>
+    <span class="o">...</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1401,42 +1164,50 @@ Each field has a key, value, and occurrence.</p>
 
 
 
-<h2 id="pyobsidian.filter.FilterField" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">FilterField</span><span class="p">(</span><span class="n">field</span><span class="p">:</span> <span class="n">Field</span><span class="p">,</span> <span class="n">mode</span><span class="p">:</span> <span class="n">FilterMode</span><span class="p">)</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
+<h2 id="pyobsidian.adder_op.OpMkHeader" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">OpMkHeader</span><span class="p">(</span><span class="n">operator</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
 
 </h2>
 
 
     <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="pyobsidian.adder_op.Op" href="#pyobsidian.adder_op.Op">Op</a></code></p>
 
 
-      <p>Represents a filter field.</p>
+      <p>Adder operator mkheader.</p>
+<p>From the operator is obtained: </p>
+<ul>
+<li>Precedence represents whether it will be added before or after. '|&gt;' or '&lt;|'</li>
+<li>The level indicates the header level (1, 2, 3 etc)</li>
+<li>The index represents which level will be applied.</li>
+</ul>
+<p>For example OpMkHeader('|&gt;{3}h2') creates precedence '|&gt;', level 2 and index 3
+The translation of this operator would be "after the third h2".</p>
+<p>This structure can be used by AdderWhere to add content based on the order of headers.</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>field</code></b>
-              (<code><a class="autorefs autorefs-internal" title="pyobsidian.filter.Field" href="#pyobsidian.filter.Field">Field</a></code>)
+          <b><code>operator</code></b>
+              (<code>str</code>)
           –
           <div class="doc-md-description">
-            <p>The filter field</p>
-          </div>
-        </li>
-        <li class="doc-section-item field-body">
-          <b><code>mode</code></b>
-              (<code><span title="pyobsidian.filter.FilterMode">FilterMode</span></code>)
-          –
-          <div class="doc-md-description">
-            <p>The mode of the filter</p>
+            <p>The operator string.</p>
           </div>
         </li>
     </ul>
 
+                  <details class="quote">
+                    <summary>Source code in <code>pyobsidian/adder_op.py</code></summary>
+                    <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">operator</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">__raw_operator</span> <span class="o">=</span> <span class="n">operator</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">__operator</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_operator</span><span class="p">(</span><span class="n">operator</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+                  </details>
 
 
 
@@ -1449,6 +1220,107 @@ Each field has a key, value, and occurrence.</p>
 
 
 
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="pyobsidian.adder_op.OpMkHeader.build_operator" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">build_operator</span><span class="p">(</span><span class="n">operator</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Build the operator.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code>operator</code></b>
+              (<code>str</code>)
+          –
+          <div class="doc-md-description">
+            <p>The operator string.</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Returns:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+              <code>dict[str, str]</code>
+          –
+          <div class="doc-md-description">
+            <p>The operator.</p>
+          </div>
+        </li>
+    </ul>
+
+            <details class="quote">
+              <summary>Source code in <code>pyobsidian/adder_op.py</code></summary>
+              <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">build_operator</span><span class="p">(</span><span class="bp">self</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">operator</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Build the operator.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    operator : str</span>
+<span class="sd">        The operator string.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict[str, str]</span>
+<span class="sd">        The operator.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;([\&lt;\&gt;]?\|[\&lt;\&gt;]?)\{([0-9]+)\}h([1-6])&#39;</span>
+    <span class="n">match</span>  <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">operator</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">match</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid operator: &#39;</span><span class="si">{</span><span class="n">operator</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;Must be pattern like &#39;([\&lt;\&gt;]?\|[\&lt;\&gt;]?)\{([0-9]+)\}h([1-6])&#39;. Example: &#39;|&gt;</span><span class="si">{1}</span><span class="s2">h1&#39;&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Invalid operator in &#39;</span><span class="si">{</span><span class="n">operator</span><span class="si">}</span><span class="s2">&#39;. Must be &#39;|&gt;&#39; or &#39;&lt;|&#39;.&quot;</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="n">message</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">textwrap</span><span class="o">.</span><span class="n">dedent</span><span class="p">(</span><span class="s2">&quot;In your case, it should be &#39;|&gt;{&quot;</span><span class="p">)</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="n">message</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">match</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;h</span><span class="si">{</span><span class="n">match</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">&#39; or &#39;&lt;|&quot;</span> <span class="o">+</span> <span class="s2">&quot;{&quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">match</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;h</span><span class="si">{</span><span class="n">match</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">&#39;&quot;</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;precedence&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+        <span class="s1">&#39;level&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="mi">3</span><span class="p">]),</span>
+        <span class="s1">&#39;index&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
 
 
 
@@ -1501,7 +1373,7 @@ Each field has a key, value, and occurrence.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../adder_op/" class="md-footer__link md-footer__link--prev" aria-label="Previous: adder_op">
+          <a href="../adder/" class="md-footer__link md-footer__link--prev" aria-label="Previous: adder">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1511,20 +1383,20 @@ Each field has a key, value, and occurrence.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                adder_op
+                adder
               </div>
             </div>
           </a>
         
         
           
-          <a href="../formatter/" class="md-footer__link md-footer__link--next" aria-label="Next: formatter">
+          <a href="../filter/" class="md-footer__link md-footer__link--next" aria-label="Next: filter">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                formatter
+                filter
               </div>
             </div>
             <div class="md-footer__button md-icon">

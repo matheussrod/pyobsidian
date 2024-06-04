@@ -11,20 +11,22 @@ pip install pyobsidian
 
 ## Usage
 
-A common workflow used in this library is define a vault, create a filter and execute it to find notes that match the filter conditions. This workflow can see bellow:
+A common workflow used in this library is to define a vault, create a sequence of steps, and execute it to manipulate notes. This workflow can be seen below. This workflow can see bellow:
 
 <p style="text-align: center;">
     <img src="https://raw.githubusercontent.com/matheussrod/pyobsidian/main/docs/assets/imgs/workflow.svg">
 </p>
 
-This can be translated to code in a very simple way:
+This can be translated to code in a very simple way.
 ```python
 >>> from pyobsidian.vault import Vault
+>>> from pyobsidian.adder_op import OpMkHeader
 >>> vault = Vault('your/obsidian/vault/path')
 >>> new_vault = (
 ...    vault
 ...    .find_by('folder', 'some_folder')
 ...    .find_by('tag', 'some_tag')
+...    .add('content', '# Some header', OpMkHeader('|>{1}h1'))
 ...    .execute()
 ...)
 >>> print(vault)
@@ -32,6 +34,7 @@ Vault(
     path='your/obsidian/vault/path',
     notes=[],
     filter=Filter(),
+    adder=Adder()
 )
 >>> print(new_vault)
 Vault(
@@ -41,6 +44,11 @@ Vault(
         [
             FilterField(Field(key='folder', value='some_folder', occurrence='file'), mode = 'and'),
             FilterField(Field(key='tag', value='some_tag', occurrence='file'), mode = 'and')
+        ]
+    ),
+    adder=Adder(
+        [
+            AdderField(key='content', value='# Some header', where=OpMkHeader('<|{1}h1'))
         ]
     )
 )
